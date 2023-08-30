@@ -1,0 +1,328 @@
+html, body{
+    font-family: verdana, Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-color: #edf4f7 ;
+    color: #002137;
+}
+h3, h2{
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 65px;
+    margin-bottom: 10px;
+}
+
+ li{
+    list-style: none;
+    padding: 12px;
+}
+ul.hot-songs-table{
+    border: 1px solid #edf4f7;
+    border-radius: 5px;
+    margin: 0;
+}
+li.h-list{
+    border: 0.5px solid #edf4f7;
+    background-color: #b2d7eb;
+}
+
+a, ul{
+    text-decoration: none;
+    color:blue;
+    margin: 0 25px;
+    padding: 0;
+}
+
+nav.container{
+    background-color: #497F9A;
+    width: 100%;
+    height: 45px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    padding-top: 5px;
+    
+}
+.nav-block{
+    width: 100%;
+    height: 330px;
+    background-color:#094D66;
+}
+img.logo{
+    width: 40px;
+    height: 40px;
+    float:left;
+    padding: 2px;
+    margin: -2px 10px;
+}
+.fa-solid{
+    font-size: 16px;
+    color: white;
+    margin: 0;
+    border-radius: 4px;
+    padding: 7px;
+    background-color: #094D66;
+}
+.navul{
+    margin: 0;
+}
+ul .navli{
+    border: 0;
+    margin: 0px;
+    float: right;
+    padding: 2px;
+}
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+input{
+    border: 0.5px solid #094D66;
+    border-radius: 4px 0 0 4px; 
+    width: 80%;
+    height: 28px;
+    margin: 0 ;
+}
+.p-holder{
+    color: grey;
+    margin: 5px 0 30px ;
+
+}
+button{
+    margin: 0;
+    padding: 0;
+    background-color: #094D66;
+    border: 0px;
+    border-radius: 0 4px 4px 0;
+}
+.hot-songs-table{
+    columns: 2;
+    width: 100%;
+    border-radius: 5px;
+}
+#first-list{
+    border-radius: 5px;
+}
+#secnd-list{
+    border-radius: 5px;
+}
+#first-sec-list{
+    border-radius: 5px;
+}
+#last-list{
+    border-radius: 5px;
+}
+.albums{
+    width: 100%;
+}
+.a-img{
+    width: 160px;
+    height: 160px;
+    margin-top:10px;
+}
+.album-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.col-box{
+    display: flex;
+}
+.column{
+    flex: 50%;
+}
+.alb-txt{
+    margin-bottom: 2px;
+}
+figcaption, .img-txt {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+footer{
+    padding: 2px;
+    margin: 2px;;
+    text-align: center;
+    width: 100%;
+}
+ul.footer1-ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #497F9A;
+    height: 60px;
+    width: auto;
+    margin: 0;
+}
+
+a.a-li-1{
+    font-size: 18px;
+    color: aliceblue;
+}
+a.a-li-2{
+    font-size: 16px;
+}
+
+ul.footer2-ul{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+p.f-note{
+    font-weight: 700;
+    font-size: 14px;
+    color: #364954;
+}
+a{
+    color:#663ca1;
+}
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+
+/* media queries mobile devices */
+@media only screen and (max-width: 480px) {
+    body{
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+    h2,h3{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    a.a-li-1{
+        font-size: 13px;
+        margin: 0;
+        font-weight: 600;
+    }
+    a.a-li-2{
+        font-size: 12px;
+        font-weight: 500;
+        margin: 0;
+    }
+    p.f-note{
+        font-size: 12px;
+    }
+    .img-txt{
+        text-align: center;
+        font-size: 12px;
+    }
+    .a-img{
+        width: 100px;
+        height: 100px;
+        margin-top:10px;
+    }
+    figcaption{
+        font-size: 12px;
+    }
+    .col-box{
+        float:left;
+        width: 100%;
+        clear: both;
+    }
+    .f-album{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .column{
+        width: 100%;
+
+    }
+   
+  }
+
+  /* tablets & ipads */
+@media (max-width: 769px) {
+    body{
+        font-size: 18px;
+        box-sizing: border-box;
+    }
+    h2,h3{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    a.a-li-1{
+        font-size: 14px;
+        margin: 0;
+        font-weight: 600;
+    }
+    a.a-li-2{
+        font-size: 13px;
+        font-weight: 500;
+        margin: 0;
+    }
+    p.f-note{
+        font-size: 14px;
+    }
+    .img-txt{
+        text-align: center;
+        font-size: 14px;
+    }
+    .a-img{
+        width: 160px;
+        height: 160px;
+        margin-top:10px;
+    }
+    figcaption{
+        font-size: 14px;
+    }
+    .col-box{
+        width: 100%;
+        display: block;
+        margin: -5px;
+    }
+    .f-album{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .column{
+        width: 100%;
+
+    }
+
+ }
+
+ /* small screens and laptops  */
+@media (max-width: 1400px)  {
+    body{
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+    h2,h3{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .hot-songs-table {
+        columns: 1;
+        width: 100%;
+        border-radius: 5px;
+    }
+    /* .album-row{
+        display: flex;
+        flex-direction: column;
+    } */
+    .col-box{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+    }
+}
+
+    /* .falbum-row {
+        display: flex;
+      }
+      
+    .column {
+        width: 100%;
+      } */
+ 
+  
+
